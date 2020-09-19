@@ -18,7 +18,7 @@
             <ul>
                 <li class="li_big"><a href="/">Home</a></li>
                 <li class="li_big"><a href="/blog">Blog</a></li>
-                <li class="li_big"><a href="/cv.html">CV</a></li>
+                <li class="li_big"><a href="/contact.html">CV</a></li>
                 <li class="li_big"><a href="/about.html">About</a></li>
             </ul>
         </nav>
@@ -33,12 +33,9 @@ Welcome to BitFun-EU/Dandelion Tech-Club home page.
         </div><!-- /.container -->
         <footer>
             <ul>
-                <li class="li_big"><a href="https://github.com/yanghao">github</a></li>
-                <li class="li_big"><a href="https://www.linkedin.com/in/huayanghao/">linkedin</a></li>
-                <li class="li_big"><a href="http://xiaoyezi.org">xiaoyezi</a></li>
                 <li class="li_big">contact: yanghao at bitfun dot eu</li>
             </ul>
-            <p>Powered by: github pages and <a href="https://nicolas-van.github.io/pygreen/">pygreen</a></p>
+            <p>Never Stop Thinking!</p>
         </footer>
     </body>
 </html>
