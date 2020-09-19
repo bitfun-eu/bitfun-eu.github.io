@@ -1,0 +1,9 @@
+<%namespace file="/mako/lib.mako" import="hash"/>
+<%inherit file="/mako/default.mako"/>
+
+<%block name="head">
+Yanghao Hua's Blog
+</%block>
+
+<%block name="content" filter="markdown">
+</%block>

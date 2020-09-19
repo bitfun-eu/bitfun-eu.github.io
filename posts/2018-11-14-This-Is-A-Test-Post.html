@@ -1,0 +1,63 @@
+<%namespace file="/mako/lib.mako" import="hash"/>
+<%inherit file="/mako/default.mako"/>
+
+<%block name="head">
+Yanghao Hua's Blog
+</%block>
+
+<%block name="content" filter="markdown">
+${hash(1)} Header H1
+${hash(2)} Header H2
+${hash(3)} Header H3
+${hash(4)} Header H4
+${hash(5)} Header H5
+${hash(6)} Header H6
+
+* list 1
+* list 2
+* list 3
+
+Need something in between ...
+
+1. list 1
+1. list 2
+1. list 3
+
+Another line.
+
+    import os
+    import sys
+    def test():
+        print("Hello World!")
+    test()
+
+> This is supposed to be a block quote
+spanning multiple lines of markdown does
+not matter much.
+
+> Another block quote.
+
+This is a [link to my home page](/).
+
+> This is a multi-level block quote
+> > The second level block quote
+
+*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+
+This is code `printf("Hello world!\n")` in a paragraph.
+
+This is an image of in the same line:
+![picorv32](/images/picorv32_waveform.png)
+
+Or in a separate line:
+
+![picorv32](/images/picorv32_waveform.png)
+
+EOF.
+</%block>

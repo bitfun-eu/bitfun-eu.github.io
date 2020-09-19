@@ -1,0 +1,108 @@
+<%namespace file="/mako/lib.mako" import="hash"/>
+<%inherit file="/mako/default.mako"/>
+
+<%block name="head">
+Yanghao Hua's Blog
+</%block>
+
+<%block name="content" filter="markdown">
+# a.out: command not found
+It is always difficult to get started with something you don't know at all.
+
+I still remember after reading a lot of articles and books regarding UNIX and
+GNU/Linux, I am fascinated with it. And I believed if I can get a hello world
+working in GNU/Linux, I can do anything else too on GNU/Linux.
+
+So I carefully crafted my first hello world in C with vim:
+
+    #include <stdio.h>
+    int main(int argc, char **argv)
+    {
+        printf("Hello World!\n");
+        return 0;
+    }
+
+Then I went on to compile it with GCC:
+
+    $ gcc test.c
+    $ ls
+    a.out test.c
+
+Looks all great, I generated my very first executable image from test.c, now
+just need to run it:
+
+    $ a.out
+    a.out: command not found
+    $ ls
+    a.out test.c
+    $
+
+I became completely lost at this stage ... obviously I didn't know anything
+about search path, I didn't even know there is the thing called environment
+variables. All I did know is some basic C syntax and nothing more.
+
+It is hard to imagine at that time (2002/2003), the information on internet is
+not that abundant and search didn't reveal any information on `$ a.out: command
+not found`. After digging into a UNIX book in college library for a week I
+noticed one example, instead of doing `$ executable` it did `$ ./executable`.
+This is one of my most happy times ever, right away I realized the current
+folder is not searched for `a.out` and I just need to type `$ ./a.out` instead to
+get my first hello world working. Yay ~~~
+
+# Why software engineer needs GNU/Linux
+GNU/Linux, and the entire open source community, is essentially becoming **the
+language**. It is like English is a must-to-learn if you want to communicate
+with rest of the world, GNU/Linux is the platform for the entire open source
+community, and even M$ finally gives in and become one of the major contributor
+to open source community, and its latest windows OS even supports a Linux
+subsystem just to better support all those user space applications that was only
+able to run on Linux can now also run on windows (my last try in 2017 shows
+it still has a long way to go though, but definitely better than nothing).
+
+GNU/Linux is still one of the most efficient operating systems out there,
+completely free, super stable and reliable, runs across super computers, PC,
+mobile phones and a lot more.
+
+Having said all those good parts of GNU/Linux, this is not even the major reason
+for software engineer to use GNU/Linux. In my view, the main reason is that
+setting up a development environment on GNU/Linux is really easy, if not set up
+by default. From console-based development, to IDEs, all you need to do is
+something like `$ sudo apt install My-Loved-Application` and you are all done.
+
+Using GNU/Linux means you invested yourself in something that has the biggest
+scope and return in the future as a software developer.
+
+# How should a newbie starts learning GNU/Linux
+Now looking back my old days, I really wish there was some UNIX guru around me
+to point out this silly searching path issue. But in a M$-Windows dominated
+environment, where almost every one is using graphical environment and IDEs, it
+was not that easy to come across such a UNIX guru. I, somehow, always wanted the
+hard way, because I always had this feeling that IDEs are cheating, not
+clean, hard to reproduce the same thing. Astonishingly all those naive
+feelings at that time proved all true even today. And after an amazing 15 years
+of my first C hello world program, I am still not using any IDEs and still working
+99% of the time in a text console, including right now writing this blog post
+from a shell cnosole using vim.
+
+The entire college culture doesn't really change even today in China. My cousin graduated
+from college computer science major still knows very little about UNIX systems.
+
+So, if you are a newbie and want to starts learning GNU/Linux and software
+development in general, how do you get started by yourselves? Here is some
+recommendations:
+
+1. Have a GNU/Linux system at hand, with internet connections.
+1. Understand the basic UNIX philosophy: everything is a file.
+1. Learn the basic shell commands.
+1. Understand the Operating System execution environment.
+1. Pick up your favorite programming language
+1. Write your first hello world
+1. Run it.
+
+Congratulations, hopefully with only a few minutes, you stepped into the amazing
+world of GNU/Linux and open source software.
+
+# Recommendations on articles and books
+TBD.
+
+</%block>

@@ -1,0 +1,17 @@
+<%namespace file="/mako/lib.mako" import="build_list"/>\
+<%inherit file="/mako/default.mako"/>
+
+<%block name="title">
+Yanghao Hua's Blog
+</%block>
+
+<%block name="head">
+Yanghao Hua's Blog
+</%block>
+
+<%block name="content">
+<h1>Blog List:</h1>
+${build_list("posts")}
+
+<p>All blogs are here. There is no paging.</p>
+</%block>
