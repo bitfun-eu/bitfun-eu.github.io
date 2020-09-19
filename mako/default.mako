@@ -10,7 +10,6 @@
         <link rel="stylesheet" type="text/css" href="/css/main.css">
 
         <title><%block name="title">Yanghao Hua's Home Page</%block></title>
-        <script data-ad-client="ca-pub-1939257407257551" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
     <body>
         <h1><%block name="head">BitFun-EU/Dandelion Tech-Club Home Page</%block></h1>
