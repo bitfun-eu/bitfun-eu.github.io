@@ -13,7 +13,7 @@
         <script data-ad-client="ca-pub-1939257407257551" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
     <body>
-        <h1><%block name="head">BitFun-EU/DAndelion Tech-Club Home Page</%block></h1>
+        <h1><%block name="head">BitFun-EU/Dandelion Tech-Club Home Page</%block></h1>
         <nav>
             <ul>
                 <li class="li_big"><a href="/">Home</a></li>
