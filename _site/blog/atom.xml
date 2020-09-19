@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Yanghao Hua's Blog Atom Feeds</title>
+	<link href="http://io.xiaoyezi.org/blog/atom.xml" rel="self"/>
+	<link href="http://io.xiaoyezi.org/blog"/>
+	<updated>${env.date}</updated>
+	<id>http://io.xiaoyezi.org/blog</id>
+	<author>
+		<name>Yanghao Hua</name>
+		<email>huayanghao@gmail.com</email>
+	</author>
+
+	% for id, post in enumerate(env.list_all("posts")):
+		<entry>
+			<title>${post}</title>
+			<link href="http://io.xiaoyezi.org/blog/${post}"/>
+			<updated>${env.date}</updated>
+			<id>http://yanghao.github.io/blog/${id}</id>
+			<content type="html">Check the web for content.</content>
+		</entry>
+	% endfor
+
+</feed>
