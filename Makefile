@@ -8,6 +8,8 @@ cp:
 	cp -r _site/* ../page/
 
 update:
+	git add .
+	git commit -m "update"
 	git push
 
 serve:
