@@ -18,7 +18,7 @@
             <ul>
                 <li class="li_big"><a href="/">Home</a></li>
                 <li class="li_big"><a href="/blog">Blog</a></li>
-                <li class="li_big"><a href="/contact.html">CV</a></li>
+                <li class="li_big"><a href="/contact.html">Contact</a></li>
                 <li class="li_big"><a href="/about.html">About</a></li>
             </ul>
         </nav>
