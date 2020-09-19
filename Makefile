@@ -7,5 +7,8 @@ all:
 cp:
 	cp -r _site/* ../page/
 
+update:
+	git push
+
 serve:
 	pygreen serve
