@@ -1,17 +1,9 @@
 <%namespace file="/mako/lib.mako" import="build_list"/>\
 <%inherit file="/mako/default.mako"/>
 
-<%block name="title">
-BitFun-EU/Dandelion Tech-Club Blog
-</%block>
-
-<%block name="head">
-BitFun-EU/Dandelion Tech-Club Blog
-</%block>
-
 <%block name="content">
-<h1>Blog List:</h1>
+<h1>新闻列表</h1>
 ${build_list("posts")}
 
-<p>All blogs are here. There is no paging.</p>
+<p>结束。没有更多新闻了。</p>
 </%block>
